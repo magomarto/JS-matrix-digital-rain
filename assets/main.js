@@ -4,9 +4,9 @@ const canvasWidthPercentage = 0.8;
 c.height = window.innerHeight;
 c.width = window.innerWidth * canvasWidthPercentage;
 var letters = ["ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
-const fontSize = 27;
+const fontSize = 17;
 const dropSpacing = 1.5;
-const columns = c.width / (fontSize * 0.6);
+const columns = c.width / (fontSize * 1.0);
 const drops = new Array(Math.floor(columns)).fill(1);
 
 function draw() {
@@ -14,8 +14,7 @@ function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.09)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    
-    ctx.fillStyle = "#40e07d"; 
+    ctx.fillStyle = "#00FF00"; 
     ctx.font = `${fontSize}px arial`;
 
     for (let i = 0; i < drops.length; i++) {
@@ -33,7 +32,7 @@ function draw() {
 
     setTimeout(function() {
         window.requestAnimationFrame(draw);
-    }, 48); 
+    }, 38); 
 }
 
 draw();
