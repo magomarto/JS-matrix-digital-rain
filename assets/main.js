@@ -1,6 +1,6 @@
 const c = document.getElementById("matrix");
 const ctx = c.getContext("2d");
-const canvasWidthPercentage = 0.8;
+const canvasWidthPercentage = 1.0;
 c.height = window.innerHeight;
 c.width = window.innerWidth * canvasWidthPercentage;
 var letters = ["ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
@@ -34,5 +34,7 @@ function draw() {
         window.requestAnimationFrame(draw);
     }, 38); 
 }
+
+
 
 draw();
