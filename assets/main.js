@@ -6,7 +6,7 @@ c.width = window.innerWidth * canvasWidthPercentage;
 var letters = ["ﾊ","ﾐ","ﾋ","ｰ","ｳ","ｼ","ﾅ","ﾓ","ﾆ","ｻ","ﾜ","ﾂ","ｵ","ﾘ","ｱ","ﾎ","ﾃ","ﾏ","ｹ","ﾒ","ｴ","ｶ","ｷ","ﾑ","ﾕ","ﾗ","ｾ","ﾈ","ｽ","ﾀ","ﾇ","ﾍ",":","・",".","=","*","+","-","<",">","¦","｜","ﾘ"];
 const fontSize = 17;
 const dropSpacing = 1.5;
-const columns = c.width / (fontSize * 1.0);
+const columns = c.width / (fontSize * 0.5);
 const drops = new Array(Math.floor(columns)).fill(1);
 
 function draw() {
